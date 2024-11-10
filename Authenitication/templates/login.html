@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    {{ms}}
+    <div class="text-center bg-blue-700 w-full h-32 ">
+    <h1 class="text-white font-bold  text-2xl">login Page</h1>
+    </div>
+
+  
+
+    <div class="w-full h-96 bg-blue-400 ">
+        <form action="/loginn/" method="POST" class="m-auto w-fit">
+            {% csrf_token %}
+         
+            <label class="">email</label><br>
+                <input type="email"  name="email" placeholder="email address" class="border-2 p-2 border-rose-600 "><br><br>
+
+            <label class="">password</label><br>
+                <input type="password" name="password" placeholder="password" class="border-2  p-2 border-rose-600 "><br><br>
+
+            <button class="text-white bg-green-800 w-44 p-4 font-bold text-1xl">login</button>  
+            
+            </form> 
+
+
+
+
+    </div>
+</body>
+</html>
